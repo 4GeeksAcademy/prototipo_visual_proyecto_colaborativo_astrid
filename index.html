@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'Élégance | Tienda de Ropa Francesa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ClothingStore",
+      "name": "L'Élégance",
+      "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Rue de Rivoli",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <nav class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter uppercase">
+                <a href="index.html">L'Élégance</a>
+            </div>
+
+            <div class="hidden md:flex flex-1 mx-10">
+                <div class="relative w-full max-w-md">
+                    <input type="text" placeholder="Buscar productos..." class="w-full bg-gray-100 border-none rounded-full py-2 px-5 focus:ring-2 focus:ring-black outline-none transition-all">
+                </div>
+            </div>
+
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:underline text-sm font-medium">Cuenta</a>
+                <a href="carrito.html" class="relative group">
+                    <span class="text-sm font-medium">Carrito</span>
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow">
+        <section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=2070" alt="Colección de Verano" class="absolute inset-0 w-full h-full object-cover">
+            <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+            <div class="relative text-center text-white px-4">
+                <h1 class="text-5xl md:text-7xl font-bold mb-4">Nueva Colección</h1>
+                <p class="text-lg md:text-xl mb-8 max-w-lg mx-auto">Explora la esencia del estilo parisino con nuestras piezas exclusivas de temporada.</p>
+                <a href="catalogo.html" class="bg-white text-black px-8 py-3 font-semibold hover:bg-gray-200 transition-colors">Ver Catálogo</a>
+            </div>
+        </section>
+
+        <section class="container mx-auto px-4 py-16">
+            <div class="flex justify-between items-end mb-8">
+                <h2 class="text-3xl font-bold italic">Nuevos lanzamientos</h2>
+                <a href="catalogo.html" class="text-sm underline">Ver todos</a>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1020" alt="Producto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-medium">Blusa Lino Beige</h3>
+                    <p class="text-gray-500 text-sm">€ 45.00</p>
+                </article>
+                <article class="group cursor-pointer">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1539109136881-3be0616acf4b?q=80&w=987" alt="Producto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h3 class="font-medium">Chaqueta Vintage</h3>
+                    <p class="text-gray-500 text-sm">€ 89.00</p>
+                </article>
+                </div>
+        </section>
+
+        <section class="bg-gray-50 py-16">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl font-bold italic mb-8">Más vendidos</h2>
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                    <article class="group cursor-pointer">
+                        <div class="overflow-hidden mb-4 aspect-[3/4] bg-white">
+                            <img src="https://images.unsplash.com/photo-1571513722275-4b41940f54b8?q=80&w=987" alt="Producto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <h3 class="font-medium">Pantalón Slim Fit</h3>
+                        <p class="text-gray-500 text-sm">€ 60.00</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Categorías</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Calzado</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Camisas</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pantalones</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Accesorios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Legal</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Política de privacidad</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Sobre la marca</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Contacto</h4>
+                <p class="text-gray-400 text-sm mb-4">Soporte al cliente: <br> support@lelegance.fr</p>
+                <div class="flex space-x-4">
+                    <span class="text-xs border border-gray-600 px-2 py-1">IG</span>
+                    <span class="text-xs border border-gray-600 px-2 py-1">FB</span>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 border-t border-gray-900 pt-8 text-center text-xs text-gray-600">
+            <p>&copy; 2026 L'Élégance. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
