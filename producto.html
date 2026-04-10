@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blazer Slim Fit | L'Élégance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "Product",
+      "name": "Blazer Slim Fit",
+      "image": "https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6",
+      "description": "Blazer de corte ajustado en lana virgen, ideal para eventos formales o un look business casual sofisticado.",
+      "sku": "001-A",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "120.00",
+        "availability": "https://schema.org/InStock"
+      }
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <nav class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter uppercase">
+                <a href="index.html">L'Élégance</a>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="catalogo.html" class="hover:underline text-sm font-medium">Catálogo</a>
+                <a href="carrito.html" class="relative group">
+                    <span class="text-sm font-medium">Carrito</span>
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8 md:py-16">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 mb-16">
+            
+            <section class="aspect-[3/4] bg-gray-100 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=1000" 
+                     alt="Blazer Slim Fit" 
+                     class="w-full h-full object-cover">
+            </section>
+
+            <section class="flex flex-col">
+                <nav class="text-xs text-gray-400 mb-4 uppercase tracking-widest">
+                    <a href="index.html" class="hover:text-black">Inicio</a> / 
+                    <a href="catalogo.html" class="hover:text-black">Hombres</a> / 
+                    <span class="text-black">Blazer</span>
+                </nav>
+
+                <h1 class="text-4xl font-bold mb-2 italic">Blazer Slim Fit</h1>
+                <p class="text-gray-500 text-sm mb-6 font-mono">Código: 001-A</p>
+
+                <p class="text-3xl font-light mb-8">€ 120.00</p>
+
+                <div class="space-y-6 mb-10">
+                    <div>
+                        <label class="block text-xs font-bold uppercase mb-2">Talla</label>
+                        <div class="flex gap-2">
+                            <button class="border border-black px-4 py-2 text-sm hover:bg-black hover:text-white transition-colors">S</button>
+                            <button class="border border-gray-200 px-4 py-2 text-sm hover:border-black transition-colors">M</button>
+                            <button class="border border-gray-200 px-4 py-2 text-sm hover:border-black transition-colors">L</button>
+                            <button class="border border-gray-200 px-4 py-2 text-sm hover:border-black transition-colors">XL</button>
+                        </div>
+                    </div>
+
+                    <div class="w-32">
+                        <label for="cantidad" class="block text-xs font-bold uppercase mb-2">Cantidad</label>
+                        <select id="cantidad" class="w-full border border-gray-200 p-2 text-sm outline-none">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="w-full bg-black text-white py-4 font-bold uppercase tracking-widest hover:bg-gray-800 transition-colors mb-4">
+                    Agregar al carrito
+                </button>
+                
+                <p class="text-xs text-gray-400 text-center italic">Envío gratuito en pedidos superiores a € 150.</p>
+            </section>
+        </div>
+
+        <hr class="border-gray-100 mb-12">
+        <section class="max-w-3xl">
+            <h2 class="text-2xl font-bold mb-6">Descripción del producto</h2>
+            <div class="prose prose-sm text-gray-600 space-y-4">
+                <p>
+                    Este Blazer Slim Fit ha sido confeccionado con los más altos estándares de sastrería francesa. Su corte ajustado realza la silueta masculina sin comprometer la comodidad, gracias a su composición de lana ligera de alta calidad.
+                </p>
+                <h3 class="font-bold text-black mt-6">Materiales</h3>
+                <ul class="list-disc pl-5 space-y-1">
+                    <li>Exterior: 98% Lana virgen, 2% Elastano.</li>
+                    <li>Forro: 100% Viscosa suave.</li>
+                    <li>Botones de asta natural.</li>
+                </ul>
+                <h3 class="font-bold text-black mt-6">Uso recomendado</h3>
+                <p>
+                    Perfecto para eventos de gala, reuniones de negocios o para elevar un par de jeans oscuros en una cena nocturna. Una pieza versátil e indispensable en el guardarropa moderno.
+                </p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-black text-white pt-16 pb-8">
+        </footer>
+
+</body>
+</html>
