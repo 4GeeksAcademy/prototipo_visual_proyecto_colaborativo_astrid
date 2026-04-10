@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | L'Élégance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Catálogo de Ropa L'Élégance",
+      "description": "Explora nuestra colección de 20 prendas exclusivas con diseño francés."
+    }
+    </script>
+</head>
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+    <header class="sticky top-0 z-50 bg-white border-b border-gray-100">
+        <nav class="container mx-auto px-4 h-20 flex items-center justify-between">
+            <div class="text-2xl font-bold tracking-tighter uppercase">
+                <a href="index.html">L'Élégance</a>
+            </div>
+            <div class="hidden md:flex flex-1 mx-10">
+                <div class="relative w-full max-w-md">
+                    <input type="text" placeholder="Buscar productos..." class="w-full bg-gray-100 border-none rounded-full py-2 px-5 focus:ring-2 focus:ring-black outline-none transition-all">
+                </div>
+            </div>
+            <div class="flex items-center space-x-6">
+                <a href="#" class="hover:underline text-sm font-medium">Cuenta</a>
+                <a href="carrito.html" class="relative group">
+                    <span class="text-sm font-medium">Carrito</span>
+                    <span class="absolute -top-2 -right-3 bg-black text-white text-[10px] rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="flex-grow container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8">Todos los productos</h1>
+
+        <section class="flex flex-wrap gap-4 mb-12 p-4 bg-gray-50 rounded-lg">
+            <div class="flex flex-col gap-1">
+                <label for="categoria" class="text-xs font-bold uppercase text-gray-500">Categoría</label>
+                <select id="categoria" class="bg-white border border-gray-200 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-black outline-none">
+                    <option>Todas las categorías</option>
+                    <option>Calzado</option>
+                    <option>Camisas</option>
+                    <option>Pantalones</option>
+                    <option>Accesorios</option>
+                </select>
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="talla" class="text-xs font-bold uppercase text-gray-500">Talla</label>
+                <select id="talla" class="bg-white border border-gray-200 rounded px-3 py-2 text-sm focus:ring-1 focus:ring-black outline-none">
+                    <option>Cualquier talla</option>
+                    <option>S</option>
+                    <option>M</option>
+                    <option>L</option>
+                    <option>XL</option>
+                </select>
+            </div>
+            <div class="flex items-end">
+                <button class="bg-black text-white px-6 py-2 text-sm font-medium hover:bg-gray-800 transition-colors">Filtrar</button>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-y-12 gap-x-6">
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=987" alt="Traje Moderno" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Blazer Slim Fit</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 001-A</p>
+                    <p class="font-bold mt-2">€ 120.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://m.media-amazon.com/images/I/41tkDXR5tDL._AC_UY1000_.jpg" alt="Camisa Oxford Blanca" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Camisa Oxford Blanca</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 002-B</p>
+                    <p class="font-bold mt-2">€ 45.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://fernandodecarcer.com/cdn/shop/files/FernandodeCarcer28-10-25_0469.jpg?v=1763387445&width=2048" alt="Pantalón Chino Navy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Pantalón Chino Navy</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 003-C</p>
+                    <p class="font-bold mt-2">€ 55.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://i.etsystatic.com/27168120/r/il/3bf4fc/6991997325/il_570xN.6991997325_58ra.jpg" alt="Vestido Midi Seda" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Vestido Midi Seda</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 004-D</p>
+                    <p class="font-bold mt-2">€ 140.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://e4complementos.com/wp-content/uploads/2018/10/cinturon_piel_hebilla_forrada_03010002c_1.jpg" alt="Cinturón Cuero Marrón" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Cinturón Cuero Marrón</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 005-E</p>
+                    <p class="font-bold mt-2">€ 30.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://m.media-amazon.com/images/I/81YnIyI3i1L._AC_UY900_.jpg" alt="Zapatos Oxford Piel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Zapatos Oxford Piel</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 006-F</p>
+                    <p class="font-bold mt-2">€ 110.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://hips.hearstapps.com/hmg-prod/images/jersey-cachemira-gris-66dfefc4b3cd1.jpg?resize=980:*" alt="Jersey Cachemira Gris" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Jersey Cachemira Gris</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 007-G</p>
+                    <p class="font-bold mt-2">€ 95.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://i.ebayimg.com/images/g/DQcAAOSwiXRkhN-z/s-l1200.webp" alt="Gafas de Sol Riviera" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Gafas de Sol Riviera</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 008-H</p>
+                    <p class="font-bold mt-2">€ 75.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://vianala.com/wp-content/uploads/2023/08/IMG_3818-copia.jpg" alt="Bolso de Mano Piel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Bolso de Mano Piel</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 009-I</p>
+                    <p class="font-bold mt-2">€ 180.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://i.pinimg.com/736x/12/43/fc/1243fcdf0fa15fbb400187d8f16b03c7.jpg" alt="Abrigo Lana Largo" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Abrigo Lana Largo</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 011-K</p>
+                    <p class="font-bold mt-2">€ 220.00	phot</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://www.vindastore.com/wp-content/uploads/2025/12/9a5d8ca0-3ebc-4fdc-90a6-8fda9f9026f9.jpg" alt="Sombrero Fedora Fieltro" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Sombrero Fedora Fieltro</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 012-L</p>
+                    <p class="font-bold mt-2">€ 40.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://leoetugo.fr/cdn/shop/files/KHJ902-1.jpg?v=1764864434&width=2048" alt="Falda Plisada Noir" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Falda Plisada Noir</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 013-M</p>
+                    <p class="font-bold mt-2">€ 65.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxA_OzQ9MMR5n0QFKLjBm3ircNqP0wmnig8A&s" alt="Reloj Minimalista Gold" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Reloj Minimalista Gold</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 014-N</p>
+                    <p class="font-bold mt-2">€ 130.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://m.media-amazon.com/images/I/61lUV2dQd9L._AC_UF894,1000_QL80_.jpg" alt="Bufanda Seda Estampada" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Bufanda Seda Estampada</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 015-O</p>
+                    <p class="font-bold mt-2">€ 35.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://img.fruugo.com/product/4/70/1037112704_max.jpg" alt="Mocasines Gamuza Azul" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Mocasines Gamuza Azul</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 016-P</p>
+                    <p class="font-bold mt-2">€ 90.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQg96eHjAgzV0nxcI4sumwQl1mb9c-D_OpFTg&s" alt="Corbata Seda Rayas" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Corbata Seda Rayas</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 017-Q</p>
+                    <p class="font-bold mt-2">€ 28.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://images.asos-media.com/products/botas-chelsea-marron-chocolate-con-suela-gruesa-austin-de-asos-design-wide-fit/208619699-1-chocolate?$n_640w$&wid=513&fit=constrain" alt="Botas Chelsea Marrone" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Botas Chelsea Marrones</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 018-R</p>
+                    <p class="font-bold mt-2">€ 125.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://nzanewzealand.com/_next/image?url=https%3A%2F%2Fnzanewzealand.com%2Fmedia%2Fcatalog%2Fproduct%2Fc%2F0%2Fc0b9e895c307a569a950a777f884d17ae6761f46_25GN820_1758_D.jpg&w=2048&q=75" alt="Chaleco Acolchado" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Chaleco Acolchado</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 019-S</p>
+                    <p class="font-bold mt-2">€ 70.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://gusti-cuero.es/cdn/shop/files/Pawel_2A54-22-6_unrec_1.jpg?v=1764053758&width=1200" alt="Cartera Cuero Slim" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Cartera Cuero Slim</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 020-T</p>
+                    <p class="font-bold mt-2">€ 45.00</p>
+                </a>
+            </article>
+
+            <article class="group">
+                <a href="producto.html">
+                    <div class="overflow-hidden mb-4 aspect-[3/4] bg-gray-100">
+                        <img src="https://tienda.oxfamintermon.org/45787-large_default/camiseta-man-organic-kako-ambar-s.jpg" alt="Camiseta Algodón Orgánico" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <h2 class="font-medium text-sm">Camiseta Algodón Orgánico</h2>
+                    <p class="text-gray-500 text-xs mt-1">Ref: 010-J</p>
+                    <p class="font-bold mt-2">€ 45.00</p>
+                </a>
+            </article>
+
+            </section>
+    </main>
+
+    <footer class="bg-black text-white pt-16 pb-8">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-12 mb-12">
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Categorías</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Calzado</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Camisas</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Pantalones</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Accesorios</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Legal</h4>
+                <ul class="space-y-3 text-gray-400 text-sm">
+                    <li><a href="#" class="hover:text-white transition-colors">Términos y condiciones</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Política de privacidad</a></li>
+                    <li><a href="#" class="hover:text-white transition-colors">Sobre la marca</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-bold uppercase mb-6 text-sm tracking-widest">Contacto</h4>
+                <p class="text-gray-400 text-sm mb-4">Soporte al cliente: <br> support@lelegance.fr</p>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 border-t border-gray-900 pt-8 text-center text-xs text-gray-600">
+            <p>&copy; 2026 L'Élégance. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
